@@ -1,0 +1,41 @@
+Question 2: Quelles différences faites-vous entre définition et déclaration ?
+	source: https://waytolearnx.com/2018/07/difference-entre-definition-et-declaration.html et wikipédia
+	
+	Définition: La définition permet au compilateur d'allouer l'espace de stockage nécessaire à l'entité déclarée. 
+		    Dans la définition d'une fonction, il est possible d'indiquer (suivant le langage):
+			- le nom de la fonction, methode ...
+			- le type, le nombre et les noms des paramètres de la fonction
+			- le type du résultat fourni par la fonction
+			- les données locales à la fonction
+			- les instructions à exécuter
+		    La définition est réalisée une seul fois	
+
+	Déclaration: La déclaration permet au compilateur de connaitre le type des variables, le type d'arguments et le type à retourné pour une fonction ou méthode.
+		     Elle permet également de définir la visibilité des variables ou fonctions par exemple variable globale, variable locale...
+		     La déclaration est donc nécessaire au compilateur afin de garantir le bon fonctionnement du code.
+		     La 1ere ligne de la déclaration est souvent un copier-coller de celle de la définition.
+		     La déclaration peut avoir lieu plusieurs fois
+
+	Dans certains langages de programmation, tel que le langage C/C++, la définition inclut la déclaration, ce qui signifie que la présence de la définition dans une unité (module) d'un programme permet d'y omettre la déclaration. 
+
+
+Question 3:Quelles différences faites-vous entre procédures, fonctions, méthodes ?
+
+	Les fonctions, procédures et méthodes sont une suite d'instructions, elles peuvent recevoir ou pas des arguments, elle peuvent être appelée à différents endroit du codes.
+	Elles se différencient pourtant:
+		- les procédures ne retourne pas de résultat (ou valeur) en fin d'exécution exemple procédure qui affiche les résltat d'un calcul sans que le résulat ne puisse etre réutilisé
+		- une fonction retourne toujours une valeur (ou résultat à la fin de son exécution) par exemple le résultat d'un calcul qui peut ensuite être sauvegardé dans une variable pour être réutilisé
+		- une méthodes est une fonction qui concerne un objet, par exemple pour un objet de classe chien, on peut avoir plusieurs méthodes telle que aboyer, manger, jouer. 
+		  Ces méthodes ne sont utilisables que par les objets de classe chien.
+
+Question 4:. Indiquez pour chacun des langages suivants les paradigmes utilisés : assembleur, Logo, CSS
+
+	- assembleur: paradigme impératif
+	- Logo: paradigme impératif et orienté objet
+	- CSS: paradigme descriptif et déclaratif
+
+Question 5. Sans modifier sa grammaire, comment peut-on intégrer un paradigme à un langage
+
+	Il est possible d'intégrer (coupler) un paradigme à un langage en utilisant des biblithèques (packages, librairies, modules, framework) dédiées.
+	Cela ne permet pas forcément d'être aussi performant qu'un langage dont le paradigme est natif, mais cela permet malgré tout de rrendre le langage "compatible" avec ce paradigme.
+	L'intégration du paradigme dépend de la qualité de la bibliothèque couplée.
