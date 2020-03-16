@@ -1,0 +1,2 @@
+Le risque avec la récursivité, est que si il n'y a pas de condition permettant de sortir de la boucle récursise on risque un dépassement de pile appelé: stack overflow.
+https://stackoverflow.com/

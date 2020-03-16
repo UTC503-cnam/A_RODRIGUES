@@ -1,0 +1,11 @@
+to star
+  ht
+  pendown
+  setheading -54
+  repeat 5 [ fd 50 rt 144 fd 50 rt 288]
+  setheading 90
+  penup
+end
+clearscreen
+setxy -300 0
+repeat 5[star fd 150]

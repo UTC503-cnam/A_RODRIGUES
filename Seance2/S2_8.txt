@@ -1,0 +1,65 @@
+// CODE 1: //
+dessineTriangle(int x, int y, bool gras){
+	positionneCrayon(x, y);
+	traceTriangle();
+	if (gras){
+		positionneCrayon(x, y);
+		pause(5);
+		traceTriangle();
+	}
+}
+
+dessineEtoile(int x, int y, bool gras, int nbBranche){
+	positionneCrayon(x, y);
+	traceEtoile(nbBranche);
+	if (gras){
+		positionneCrayon(x, y);
+		pause(5);
+		traceEtoile(nbBranche);
+	}
+}
+
+Avantages: le code est très facilement lisible, on imagine tout de suite l'execuution du programme
+Inconvenients: le code possède de nombreuses répétitions, il n'est pas optimisé et toute modification importante, entraine de nombreuses modification, 
+le code est donc moins évolutif et maintenable
+
+// CODE 2: //
+dessine(int figure, int x, int y, bool gras, int nbBranche){
+	positionneCrayon(x, y);
+	switch(figure){
+		case TRIANGLE: traceTriangle(); break;
+		case ETOILE: traceEtoile(nbBranche); break;
+	}
+	if (gras){
+		positionneCrayon(x, y);
+		pause(5);
+		switch(figure){
+			case TRIANGLE: traceTriangle(); break;
+			case ETOILE: traceEtoile(nbBranche); break;
+		}
+	}
+}
+Avantages: le code est toujours bien lisible, ol y a moins de répétition.
+Inconvenients: bien que plus optimiser que le précédent le code possède des répétitions,sa complécité est plus importante que le code 3
+
+
+// CODE3: //
+dessine(int figure, int x, int y, bool gras, int nbBranche){
+	positionneCrayon(x, y);
+	trace(figure, nbBranche);
+	if (gras){
+		positionneCrayon(x, y);
+		pause(5);
+		trace(figure, nbBranche);
+	}
+}
+Avantages: le code est plus court et optimiser.
+Inconvenients: il reste néanmois la répétion de la fonction trace()
+
+Il y aurait possibilié d'utiliser la récursivité, mais la complexité de l'algorithme serait supérieur à celle du code 3.
+et l'ajout de la pause(5) dans la fonction appelerait une condition.
+
+
+
+
+
